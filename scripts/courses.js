@@ -33,7 +33,7 @@ const submenu = document.querySelector(".submenu");
 const submenuCloseButton = document.querySelector("#submenu-close");
 
 let shoppingCartCourse = [];
-console.log(shoppingCartCourse);
+//console.log(shoppingCartCourse);
 
 function createList(courseLists) {
   spinner.classList.add("hidden");
@@ -144,7 +144,8 @@ async function AddNewCourse() {
     length.value,
     category.value
   );
-
+  
+   //if(id.value == course.id) return;
   const response = await fetch(`${baseUrl}`, {
     method: "POST",
     mode: "cors",
@@ -175,7 +176,7 @@ saveButton.addEventListener("click", (e) => {
   AddNewCourse()
     .then((data) => {
       console.log(data);
-      loadCourses().then((data) => createListTry(data));
+      loadCourses().then((data) => createList(data));
     })
     .catch((err) => console.log(err));
 
