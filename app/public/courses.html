@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/734a53a685.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>WestCoastEducation</title>
+    <link rel="stylesheet" href="/content/css/styles.css" />
+    <link rel="stylesheet" href="/content/css/colors.css" />
+    <link rel="stylesheet" href="/content/css/modal.css" />
+    <link rel="stylesheet" href="/content/css/shopping-cart.css" />
+    <link rel="stylesheet" href="/content/css/courses.css" />
+  </head>
+  <body>
+    <header>
+      <div id="main-nav" class="nav">
+        <h1><a href="index.html">WestCoastEducation</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li>
+            <i class="fa fa-shopping-cart" id="cart"></i>
+            
+            <div class="submenu hidden" id="shopping-cart">
+              <span class="close" id="submenu-close">&times;</span>
+              <table id="cart-content" class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Duration</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+
+              <button id="checkout" class="btn btn-primary u-full-width">
+                Checkout
+              </button>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="last-modal hidden">
+        <button class="last-close-modal">&times;</button>
+        <div class="last-modal-container"></div>
+      </div> 
+    </header>
+    <main>
+      <h1 class="course-heading">Our Courses</h1>
+      <button class="btn btn-primary" id="addNewCourse">Add new course</button>
+      <section class="courses-list"></section>
+
+      <!--Trying lab2-->
+
+      <div class="modal hidden">
+        <button class="close-modal">&times</button>
+        <section class="hidden" id="addCourse-container">
+          <form>
+            <input id="id" type="text" class="form-control" placeholder="ID" />
+            <input
+              id="courseNumber"
+              type="text"
+              class="form-control"
+              placeholder="CourseNumber"
+            />
+            <input
+              id="title"
+              type="text"
+              class="form-control"
+              placeholder="Title"
+            />
+            <input
+              id="imageName"
+              type="text"
+              class="form-control"
+              placeholder="Image"
+            />
+            <input
+              id="length"
+              type="text"
+              class="form-control"
+              placeholder="Duration"
+            />
+            <input
+              id="category"
+              type="text"
+              class="form-control"
+              placeholder="Category"
+            />
+            <textarea
+              id="description"
+              type="text"
+              class="form-control"
+              placeholder=" Description"
+            ></textarea>
+
+            <div class="buttons">
+              <button class="btn btn-primary" id="save">Save</button>
+              <button class="btn btn-primary" id="cancel">Cancel</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <section>
+        <div class="cart-modal hidden">
+          <button class="cart-close-modal">&times;</button>
+          <div class="modal-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="spinner" class="hidden">
+      <img src="/content/img/loading.gif" alt="Wait..." />
+    </div>
+    <div class="overlay hidden"></div>
+
+    <footer id="main-footer">
+      <div class="container footer-container">
+        <div class="social">
+          <a href="http://facebook.com" target="_blank"
+            ><i class="fab fa-facebook-square fa-2x"></i
+          ></a>
+          <a href="http://twitter.com" target="_blank"
+            ><i class="fab fa-twitter-square fa-2x"></i
+          ></a>
+          <a href="http://instagram.com" target="_blank"
+            ><i class="fab fa-instagram-square fa-2x"></i
+          ></a>
+          <a href="https://linkedin.com/" target="_blank"
+            ><i class="fa fa-linkedin-square fa-2x"></i
+          ></a>
+          <a href="http://youtube.com" target="_blank"
+            ><i class="fab fa-youtube-square fa-2x"></i
+          ></a>
+        </div>
+        <div>
+          <ul class="list">
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="#">Contact </a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p>WestCoastEducation &copy; 2021, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="/scripts/courses.js"></script>
+    <script src="/scripts/shopping-cart.js"></script>
+  </body>
+</html>

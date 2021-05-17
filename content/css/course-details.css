@@ -1,0 +1,110 @@
+#heading {
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+#description p {
+  color: var(--primary-text-color);
+}
+
+#heading img {
+  width: 100%;
+  max-width: 700px;
+  padding: 0.7rem;
+  background-color: var(--bg-light-color);
+  border-radius: 0.35rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+#courseNumber,
+#duration,
+#category,
+#description h1 {
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.modal {
+  width: 550px !important;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 0.75rem;
+  border-top: 1px solid #b3b5b8;
+}
+
+.modal-buttons a {
+  color: var(--bg-light-color);
+}
+
+.modal-buttons > * {
+  margin: 0.25rem;
+}
+
+/* Mobile devices*/
+@media (min-width: 320px) and (max-width: 480px) {
+  #heading {
+    font-size: 0.8rem;
+    padding-top: 1.5rem;
+  }
+
+  #courseNumber,
+  #duration,
+  #category,
+  #description h1 {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  #description p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ipad, Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+  #heading {
+    padding: 2rem 0;
+  }
+
+  #courseNumber,
+  #duration,
+  #category,
+  #description h1 {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  #description p {
+    font-size: 0.95rem;
+  }
+}
+
+/*Small screens, laptops*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  #heading {
+    padding: 3rem 0;
+    font-size: 1.5rem;
+  }
+
+  #courseNumber,
+  #duration,
+  #category,
+  #description h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #description p {
+    font-size: 1.6rem;
+  }
+}

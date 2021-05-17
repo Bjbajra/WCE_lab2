@@ -1,0 +1,12 @@
+:root {
+  --bg-light-color: #f3f3f3;
+  --primary-color: #f3eed9;
+  --secondary-color: #a8877c;
+  --light-color: #ececec;
+  --dark-color: #353333;
+  --primary-text-color: #635d5d;
+  --max-width: 1920;
+  --primary-font-family: "Roboto", sans-serif;
+  --gray-dark: #696969;
+  --gray-light: #cccccc;
+}

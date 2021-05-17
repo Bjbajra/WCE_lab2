@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.card__image--Html {
+  background-image: url(https://cdn.pixabay.com/photo/2019/05/24/19/14/learn-4226948_960_720.jpg);
+}
+
+.card__image--Css {
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/02/11/13/graphic-design-studio-1563080_960_720.jpg);
+}
+
+.card__image--JavaScript {
+  background-image: url(https://cdn.pixabay.com/photo/2019/10/03/12/12/javascript-4523100_960_720.jpg);
+}
+
+.card__title {
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  color: var(--primary-text-color);
+}
+
+.hidden {
+  display: none;
+}

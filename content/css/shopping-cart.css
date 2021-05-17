@@ -1,0 +1,111 @@
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 1rem;
+}
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+table {
+  margin-bottom: 2.5rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.remove {
+  border: 1px solid #530808;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #530808;
+}
+.remove:hover {
+  background-color: pink;
+  color: #530808;
+}
+ul {
+  list-style: none;
+}
+
+#cart {
+  color: var(--primary-color);
+}
+
+#cart:hover {
+  color: var(--gray-dark);
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 450px;
+  min-width: 400px;
+  height: 450px;
+  width: 400px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#courses-list .row {
+  margin-bottom: 20px;
+}
+.add-to-cart {
+  margin: 10px 0;
+}
+
+.last-modal {
+  width: 500px !important;
+}
+
+.last-modal-container {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none !important;
+}
